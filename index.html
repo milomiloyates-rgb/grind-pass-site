@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qafé Questrom — The Grind Pass</title>
+<style>
+:root{--black:#050505;--white:#f7f5ef;--muted:#aaa79f;--accent:#c86548;--line:#292929}
+*{box-sizing:border-box}
+body{margin:0;background:var(--black);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.5}
+.wrap{width:min(1040px,calc(100% - 36px));margin:auto}
+header{padding:28px 0 20px;border-bottom:1px solid var(--line);font-size:22px;font-weight:800;letter-spacing:-.03em}
+header span{font-weight:400}
+.brief{padding:68px 0 76px;max-width:820px}
+.kicker{color:var(--accent);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}
+h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:400}
+h1{font-size:clamp(46px,7vw,72px);line-height:.96;letter-spacing:-.05em;margin:0 0 24px}
+.brief p{font-size:18px;color:#d8d5ce;margin:0}
+.piece{padding:70px 0;border-top:1px solid var(--line)}
+.stage{font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);font-weight:700;margin-bottom:20px}
+.execution{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+.execution.reverse .media{order:2}.execution.reverse .copy{order:1}
+.media{width:100%;aspect-ratio:1/1;overflow:hidden}
+.media img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+.copy{min-width:0}
+h2{font-size:clamp(36px,4.7vw,54px);line-height:1.04;letter-spacing:-.04em;margin:0 0 20px}
+.sub{font-size:20px;line-height:1.4;color:#e4e1da;margin:0 0 25px}
+.cta{display:inline-block;font-weight:800;border-bottom:2px solid var(--accent);padding-bottom:4px;cursor:pointer}
+.steps{list-style:none;padding:0;margin:22px 0 12px;counter-reset:step}
+.steps li{counter-increment:step;border-top:1px solid var(--line);padding:15px 0 15px 38px;position:relative;font-size:17px}
+.steps li:before{content:counter(step);position:absolute;left:0;color:var(--accent);font-weight:800}
+.small{font-size:13px;color:var(--muted)}
+.smart{font-size:13px;color:var(--muted);font-style:italic;margin:24px 0 0}
+footer{border-top:1px solid var(--line);padding:28px 0 44px;color:var(--muted);font-size:13px}
+@media(max-width:720px){
+ .brief{padding:50px 0 56px}.piece{padding:50px 0}
+ .execution,.execution.reverse{grid-template-columns:1fr;gap:28px}
+ .execution.reverse .media,.execution.reverse .copy{order:initial}
+ .media{max-width:520px}.sub{font-size:18px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>Qafé <span>Questrom</span></header>
+
+<main>
+<section class="brief">
+  <div class="kicker">The brief</div>
+  <h1>Turn one work session into a Qafé habit.</h1>
+  <p>The Grind Pass is Qafé Questrom's $22.50 first-time offer for ambitious students, freelancers, entrepreneurs and remote workers who need a genuinely productive place to work. It wins the first visit with up to 25% off the first five drinks, then gives Qafé enough time to prove the real promise: great coffee, comfortable workspace and private pods when privacy matters. After the pass, customers return to regular pricing. A successful new-customer referral unlocks another Grind Pass, so the acquisition offer can earn again.</p>
+</section>
+
+<section class="piece">
+  <div class="stage">01 · Awareness</div>
+  <div class="execution">
+    <div class="media"><img src="images/ad.jpg" alt="A productive work session at Qafé Questrom"></div>
+    <div class="copy">
+      <h2>Meet your new office perk: The Grind Pass.</h2>
+      <p class="sub">Get up to 25% off your first 5 drinks. Your 6th is on us.</p>
+      <div class="cta">Get your Grind Pass</div>
+    </div>
+  </div>
+  <p class="smart">Answers: brings the promise to life; reaches the right WHO at work-session intent; leaves a measurable path to Grind Pass purchase.</p>
+</section>
+
+<section class="piece">
+  <div class="stage">02 · Purchase</div>
+  <div class="execution reverse">
+    <div class="media"><img src="images/wall.jpg" alt="Individual workspaces inside Qafé Questrom"></div>
+    <div class="copy">
+      <h2>Coffee for however long you're here.</h2>
+      <ol class="steps">
+        <li><strong>Get your Grind Pass.</strong><br>$22.50 gets you up to 25% off your first 5 drinks.</li>
+        <li><strong>Use it your way.</strong><br>Come back another day or grab another coffee in the same work session.</li>
+        <li><strong>Finish five.</strong><br>Your 6th drink is on us, up to $6.</li>
+      </ol>
+      <p class="small">Drinks over $6? Just pay the difference. Private pods are booked separately.</p>
+    </div>
+  </div>
+  <p class="smart">Answers: proves Qafé's promise in person; converts the right work-session need; creates trackable purchase and redemption behavior.</p>
+</section>
+
+<section class="piece">
+  <div class="stage">03 · Repeat &amp; Recommendation</div>
+  <div class="execution">
+    <div class="media"><img src="images/card.jpg" alt="The Grind Pass at the Qafé Questrom counter"></div>
+    <div class="copy">
+      <h2>Know someone who needs a better place to work?</h2>
+      <p class="sub">When they start their first Grind Pass, you unlock another one.</p>
+    </div>
+  </div>
+  <p class="smart">Answers: keeps working after purchase; turns recommendation into new-customer acquisition; leaves measurable repeat and referral behavior behind.</p>
+</section>
+</main>
+
+<footer>Qafé Questrom · The Grind Pass · MS718 Week 3 Growth Campaign</footer>
+</div>
+</body>
+</html>
